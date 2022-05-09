@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width">
 
   </head>
+
   <body>
   <div class="header__container">
     <div class="header__logo"><img src="https://via.placeholder.com/150x42.jpg"/></div>
@@ -18,9 +19,26 @@
   </div>
 
   <div class="header__container-slider bg-dark bg-img">
-    <div class="header__сontent-info"><img src="https://via.placeholder.com/385x401.jpg"/></div>
-    <div class="container__slider">
 
+      <div class="header__сontent-info">
+        <div class="info__title">All Marvel Comics in one place</div>
+        <div class="info__txt">Welcome to Super-Heroes Shop specialized in Marvel Comics. You will find in the
+          shelves of our shop all your favorite super heroes: Spider-Man, Iron Man, Avengers, X-men, Fanstastic 4...
+        </div>
+        <div class="search">
+          <input type="search" placeholder="Find commics...">
+          <div class="search__img"><img class="search__icon" src="images/search.png" alt="search"></div>
+        </div>
+        <div class="citation">
+          <div class="citation__message">“With great power comes great responsibility”</div>
+          <div class="citation__author">Benjamin Parker (aka Uncle Ben)</div>
+        </div>
+      </div>
+
+
+
+    <div class="header__wrapperSlider">
+      <button class="btn-prev arrow arrow-left"></button>
       <div class="wrapper">
         <div class="slider-container">
           <div class="slider-track">
@@ -35,7 +53,6 @@
                 <div class="button red">See details</div>
               </div>
             </div>
-
             <div class="slider-item">
               <img src="./images/Rectangle4.png" class="rectangle1"/>
               <img src="./images/Rectangle3.png" class="rectangle1"/>
@@ -46,7 +63,6 @@
                 <div class="button red">See details</div>
               </div>
             </div>
-
             <div class="slider-item">
               <img src="./images/Rectangle4.png" class="rectangle1"/>
               <img src="./images/Rectangle3.png" class="rectangle1"/>
@@ -56,7 +72,6 @@
                 <div class="button red">See details</div>
               </div>
             </div>
-
             <div class="slider-item">
               <img src="./images/Rectangle4.png" class="rectangle1"/>
               <div class="content__slider">
@@ -67,13 +82,18 @@
             </div>
           </div>
         </div>
-        <div class="slider-button">
-          <button class="btn-prev">prev</button>
-          <button class="btn-next">next</button>
+        <div class="slider__buttons">
+          <div class="buttons__item"><button class="btn_sld1" value="0"></button></div>
+          <div class="buttons__item"><button class="btn_sld2" value="1"></button></div>
+          <div class="buttons__item"><button class="btn_sld3" value="2"></button></div>
+          <div class="buttons__item"><button class="btn_sld4" value="3"></button></div>
         </div>
       </div>
+      <button class="btn-next arrow arrow-right"></button>
     </div>
   </div>
+
+
 
   <div class="fourGridWrapper__container">
     <a class="titleText">Latest releases</a>
@@ -112,18 +132,6 @@
       <img src="https://via.placeholder.com/296x98.jpg"/>
     </div>
   </div>
-
-
-
-
   <script src="./index.js"></script>
-
-
-
-
-
-
-
-
   </body>
 </html>
