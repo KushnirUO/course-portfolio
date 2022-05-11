@@ -1,10 +1,10 @@
   let position = 0;
   const slideToScroll=1;
-  const container = document.querySelector('.slider-item');
-  const track = document.querySelector('.slider-track');
-  const btnPrev = document.querySelector('.btn-prev');
-  const btnNext = document.querySelector('.btn-next');
-  const items =document.querySelectorAll('.slider-item');
+  const container = document.querySelector('.sliderTrack__cardImgInfo');
+  const track = document.querySelector('.sliderTrack');
+  const btnPrev = document.querySelector('.navSliderBtn__controlPrev');
+  const btnNext = document.querySelector('.navSliderBtn__controlNext');
+  const items =document.querySelectorAll('.sliderTrack__cardImgInfo');
   const itemsCount = items.length;
   const itemWidth = container.clientWidth;
   const movePosition = itemWidth;
@@ -52,10 +52,10 @@
 
 
 
-  const buttonslide1 = document.querySelector('.btn_sld1');
-  const buttonslide2 = document.querySelector('.btn_sld2');
-  const buttonslide3 = document.querySelector('.btn_sld3');
-  const buttonslide4 = document.querySelector('.btn_sld4');
+  const buttonslide1 = document.querySelector('.navRowBtn__item1');
+  const buttonslide2 = document.querySelector('.navRowBtn__item2');
+  const buttonslide3 = document.querySelector('.navRowBtn__item3');
+  const buttonslide4 = document.querySelector('.navRowBtn__item4');
 
   const changeSlide = (val) => {
     position=-(val*itemWidth);
